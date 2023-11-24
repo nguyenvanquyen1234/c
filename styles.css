@@ -1,0 +1,85 @@
+/* styles.css */
+.product{
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 16px;
+    margin: 16px;
+    text-align: center;
+    max-width: 250px;
+}
+
+.sale-label{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ff5722;
+    color: white;
+    padding: 4px;
+    font-size: auto;
+}
+
+.product.img{
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3{
+    margin: 10px 0;
+}
+
+.price-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.discounted-price{
+font-weight: bold;
+color: #ff5722;
+}
+
+.original-price{
+    text-decoration: line-through;
+    color:#ff5722;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.raiting svg{
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+}
+
+.add-to-cart,
+.view-options{
+    background-color: #4caf50;
+    color: white;
+    border: nome;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 40;
+}
+
+/* Responsive product */
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+  flex: 0 0 calc(25% - 32px); /* 32px là tổng margin và padding của sản phẩm */
+  margin: 16px;
+  text-align: center;
+  max-width: 250px;
+}
